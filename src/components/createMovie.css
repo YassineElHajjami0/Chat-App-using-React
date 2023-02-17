@@ -1,0 +1,45 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.create {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 0.5px solid rgb(239, 239, 239) ;
+	display: flex; 
+	flex-direction: column; 
+	width: 500px;
+	justify-content: center;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	gap: 10px; 
+}
+
+.create input:not(:last-child){
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+}
+
+.create div {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap : 10px; 
+}
+.create .addMovie {
+
+	padding: 10px;
+	border: none;
+	background-color: aliceblue;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	transition: .3s; 
+}

@@ -1,0 +1,244 @@
+.App {
+	font-family: 'Exo 2', sans-serif, 'Arial';
+	height: 100vh;
+	overflow: hidden;
+	background-image: url("./Images/bgg.jpg"); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left;
+	display: flex; 
+	flex-direction: column;
+	justify-content: space-between; 
+}
+
+
+
+.movies {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	gap : 20px;
+}
+
+
+.movies div {
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	padding: 20px; 
+}
+.movies h1 {
+	color : rgb(162, 197, 234);
+} 
+.movies h3 {
+	color : rgb(212, 212, 212);
+	margin: 5px 0;
+}
+
+.deleteBtn {
+	padding: 5px 10px;
+	border: none; 
+	background-color: aliceblue;
+	outline: none;
+	border-radius: 5px ;
+	cursor: pointer;
+	margin: 10px; 
+} 
+
+.App .room {
+	text-align: center;
+	width: 500px;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	left: 50%;
+	top: 50%; 
+	transform: translate(-50%, -50%); 
+	color: aliceblue; 
+}
+
+.App .room input {
+	padding: 7px;
+	font-size: 18px; 
+	border : none;
+	border-radius: 5px;
+	outline: none;
+}
+
+.App .room button {
+	padding: 10px;
+	border: none;
+	background-color: aliceblue;
+	color: rgb(73, 74, 75);
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	transition: .3s;
+	font-size: 18px;
+	font-weight: 500;  
+} 
+.App .room  button:hover { 
+	background: #3f3e54;
+	color: white; 
+}  
+
+.App .room  .darkBtn:hover{
+	background-color: #824316d9; 
+}
+
+.App .room img {
+	width: 350px; 
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%); 
+	margin-bottom: 20px;
+	animation: updown 3s infinite ease-in-out;
+	height: 300px;
+
+}
+
+@keyframes updown {
+	0% , 100% {
+		padding-bottom: 0;
+
+	}
+	50% {
+		padding-bottom: 30px;
+	}
+}
+
+@media (max-width : 650px) {
+	.App .room { 
+		width: 400px; 
+	}
+	.App .room img  {
+		width: 300px;
+	}
+}
+
+@media (max-width : 430px) {
+	.App .room {
+		width: 250px;
+		padding: 7px;
+		height: 350px;
+	}
+	.App .room img {
+		width: 200px;
+		height: 200px;
+	}
+}
+
+footer {
+	color: aliceblue;
+	text-align: center;
+	padding: 0px;
+	height: 40px;
+	font-size: 16px; 
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	gap: 10px;  
+}
+footer a {
+	text-decoration: none;
+	color : white
+ }
+footer:last-child {
+	background-color: #3f3e54b8; 
+}
+footer .githubBtn {
+	cursor: pointer;
+	transition: .3s; 
+}
+footer .githubBtn:hover {
+	color: #1c88a0;
+	font-size: 25px; 
+}
+footer .githubDark:hover {
+	color: #ce5600ea;
+	font-size: 25px; 
+}
+
+.App .loading {
+	width: 200px;
+	height: 200px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.App .loading span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.App .loading h2 {
+	animation:  loadingText 2s infinite linear; 
+}
+
+.App .loading span:first-child {
+	border-radius : 30% 70% 50% 50% / 30% 30% 70% 70% ;
+	border: 3px solid #66bed1;
+	animation: loading .6s infinite linear;
+}
+.App .loading span:nth-child(2) {
+	border-radius : 57% 43% 73% 27% / 30% 30% 70% 70% ; 
+	border: 3px solid #66bed1;
+	animation: loadingRev .5s infinite linear;
+}
+.App .loading span:nth-child(3) {
+	border-radius : 57% 43% 28% 72% / 56% 57% 43% 44%  ;
+	border: 3px solid #66bed1;
+	animation: loading .5s infinite linear;
+}
+.App .loading span:nth-child(4) {
+	border: 3px solid #66bed1;
+	border-radius :31% 69% 25% 75% / 29% 26% 74% 71% ;
+	animation: loadingRev .6s infinite linear;
+}
+.App .loading span:last-child {
+	border: 3px solid #66bed1;
+	border-radius :16% 84% 48% 52% / 76% 58% 42% 24%  ;
+	animation: loading .6s infinite linear;
+}
+
+@keyframes loading {
+	0% {
+		rotate: 0deg;
+	}
+	100% {
+		rotate: 360deg;
+	}
+}
+@keyframes loadingRev {
+	0% {
+		rotate: 0deg;
+	}
+	100% {
+		rotate: -360deg;
+	}
+}
+
+@keyframes loadingText {
+	50% {
+		color: #54b4c9;
+	}
+}

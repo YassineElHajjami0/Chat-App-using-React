@@ -1,0 +1,209 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+
+.chatContainer {
+	width: 500px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);  
+	display: flex;
+	flex-direction: column;  
+	padding: 0px;
+	gap : 10px;
+	width: 500px;
+	background: #5d757b67; 
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(133, 121, 121, 0.1);
+	backdrop-filter: blur(5px); 
+	-webkit-backdrop-filter: blur(5px);  
+	padding: 20px; 
+}
+
+.chatContainer .msgs {
+	height: 500px;
+	overflow-y: scroll;
+}
+
+.chatContainer h1 {
+	color: aliceblue;
+	text-align: center; 
+	margin-bottom: 20px;
+}
+
+.chatContainer .inputContainer {
+	width: 100%; 
+	display: flex;
+	justify-content: space-between;
+}
+.chatContainer .msgInput {
+	padding: 10px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	flex-grow: 1; 
+	border-top-left-radius: 10px; 
+	border-bottom-left-radius: 10px; 
+	background-color: #3f3e5460;
+	color: white;
+} 
+.chatContainer .send {
+	padding: 0 10px; 
+	border: none;
+	outline: none;
+	border-top-right-radius: 10px ;
+	border-bottom-right-radius: 10px ;
+	color: white;
+	background-color: #3f3e54;
+	cursor: pointer;
+	font-size: 18px;  
+	transition: .3s;
+}
+
+.chatContainer .send:hover {
+	background-color: #595874;
+}
+
+.chatContainer .msgs p {
+	color: white;
+	margin-bottom: 5px; 
+}
+
+.chatContainer .msgs p span {
+	color: #bcd0d6;
+	margin-right: 10px;
+}
+
+.chatContainer .btnsContainer {
+	position: absolute;
+	bottom: -70px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 10px; 
+}
+
+.chatContainer .logout {
+	
+	padding: 10px 20px;  
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	font-size: 18px; 
+	font-weight: 500;  
+	background-color: aliceblue;
+	color: #3f3e54; 
+	cursor: pointer;
+	transition: .3s; 
+}
+
+.chatContainer .otherRoom {
+
+	padding: 10px 20px;  
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	font-size: 18px; 
+	font-weight: 500;  
+	background-color: aliceblue;
+	color: #3f3e54; 
+	cursor: pointer;
+	transition: .3s; 
+}
+.chatContainer .logout:hover, .chatContainer .otherRoom:hover {
+	background-color: #3f3e54;
+	color: aliceblue;  
+}
+.chatContainer .darkLogout:hover , .chatContainer .darkSpan {
+	background-color:  #a8581fd9;
+}
+.chatContainer .darkSpan:hover {  
+	background-color:  #7e4217d9; 
+}
+
+::-webkit-scrollbar {
+	width: 10px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	background:  #a6a6ac; 
+	border-radius: 10px;
+  }
+
+  @media (max-width : 650px) {
+	.chatContainer { 
+		width: 400px; 
+	}
+	.chatContainer h1 {
+		font-size: 25px; 
+	}
+}
+
+@media (max-width : 430px) {
+	.chatContainer {
+		width: 300px;
+		padding: 10px; 
+	}
+	.chatContainer h1 {
+		font-size: 20px; 
+	}
+	.chatContainer .logout {
+		bottom: -50px; 
+		font-size: 18px;
+		padding: 5px; 
+	}
+	.chatContainer .inputContainer input {
+		width: 200px;
+	}
+}
+
+@media (max-width : 320px) {
+	.chatContainer { 
+		width: 250px;
+		height: 300px; 
+	}
+	.chatContainer h1 {
+		font-size: 20px; 
+	}
+	.chatContainer .inputContainer input {
+		width: 50px; 
+		padding: 5px;
+		font-size: 17px; 
+	}
+	.chatContainer .inputContainer .send {
+		font-size: 17px; 
+	}
+
+}
+@media (max-height : 915px) { 
+	.chatContainer {
+		height: 500px;
+	}
+}
+@media (max-height : 760px) { 
+	.chatContainer {
+		height: 400px;
+	} 
+}
+@media (max-height : 600px) { 
+	.chatContainer {
+		height: 350px;
+	}
+	.chatContainer .logout {
+		bottom: -40px; 
+	}
+}
+@media (max-height : 550px) {  
+	.chatContainer {
+		height: 300px;
+	}
+	.chatContainer .logout {
+		bottom: -40px; 
+	}
+}
+ 

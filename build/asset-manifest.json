@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.94ce2107.css",
+    "main.js": "/static/js/main.f027ed08.js",
+    "static/media/bgg.jpg": "/static/media/bgg.192a2dc76edf4779da6d.jpg",
+    "static/media/lastDark.jpg": "/static/media/lastDark.6025d6361c281cd23d2e.jpg",
+    "static/media/newBni9a.png": "/static/media/newBni9a.28c61b7d828b86c687cc.png",
+    "static/media/nightGirl2.svg": "/static/media/nightGirl2.c8abf632aeda38439b28d81c94b5773f.svg",
+    "static/media/lastWhiteLogo.png": "/static/media/lastWhiteLogo.68e8f5aeb6b96d48272e.png",
+    "static/media/friends.svg": "/static/media/friends.dc1dd3d3f4831d3fdd2851320af0eb34.svg",
+    "static/media/camping.svg": "/static/media/camping.9b894ee57a742b5d60c0b7fe24ee963e.svg",
+    "static/media/nightCamping.svg": "/static/media/nightCamping.18bd0b15243722ea93c9b6940501f56e.svg",
+    "index.html": "/index.html",
+    "main.94ce2107.css.map": "/static/css/main.94ce2107.css.map",
+    "main.f027ed08.js.map": "/static/js/main.f027ed08.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94ce2107.css",
+    "static/js/main.f027ed08.js"
+  ]
+}

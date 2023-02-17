@@ -1,0 +1,195 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Exo 2', sans-serif, 'Arial';
+}
+.authContainer 
+{
+	position: absolute; 
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);  
+	display: flex;
+	flex-direction: column;  
+	padding: 0px;
+	gap : 10px;
+	width: 500px;
+	background: #56556067; 
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(133, 121, 121, 0.1);
+	backdrop-filter: blur(5px); 
+	-webkit-backdrop-filter: blur(5px);  
+	padding: 20px;
+} 
+
+.authContainer .reservedForImg {
+	width: 100%;
+	height: 300px; 
+}
+
+.authContainer .friends {
+	background-image: url("../Images/friends.svg");
+	background-position: center;
+	background-size: cover;
+	width:400px;
+	height: 300px;
+	position: absolute; 
+	left: 50%;
+	top: 10px;
+	transform: translateX(-50%);
+	z-index: 20; 
+
+
+}
+.authContainer input {
+	padding: 10px; 
+	border: none;
+	background-color:rgb(248, 252, 255) ;
+	font-size: 18px;
+	outline: none;
+	background-color: transparent;
+	color: rgb(241, 243, 247);
+	border-bottom: 1px solid rgb(207, 236, 242) ; 
+}
+.authContainer input::placeholder {
+	color: #474655; 
+}
+
+.authContainer .darkInput::placeholder {
+	color: white;
+}
+.authContainer .darkOr{
+	color: white;
+}
+
+.authContainer button {
+	padding: 10px;
+	border: none;
+	background-color: aliceblue;
+	color: rgb(73, 74, 75);
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	transition: .3s;
+	font-size: 18px;
+	font-weight: 500;  
+} 
+.authContainer button:hover { 
+	background: #3f3e54;
+	color: white; 
+} 
+.authContainer  button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px; 
+}
+.authContainer .darkBtn:hover{
+	background-color: #a05c2bd9;
+}
+.authContainer p {
+	color: white;
+	margin: 10px 0; 
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: fit-content; 
+	color:  #3f3e54;
+}
+.authContainer p::before {
+	content: '';
+	position: absolute;
+	left: -20px;
+ 	top: 50%;
+	transform: translateY(-50%);
+ 	width: 15px;
+	height: 2px;
+	background-color: rgb(209, 236, 242) ;
+	
+}
+.authContainer .signInError {
+	color: rgb(231, 89, 73);
+	font-size: 20px;
+	text-align: center; 
+}
+.authContainer p::after {
+	content: '';
+	position: absolute;
+	right: -20px;
+ 	top: 50%;
+	transform: translateY(-50%);
+ 	width: 15px;
+	height: 2px;
+	background-color: rgb(202, 231, 238) ;
+	
+}
+@media (max-width : 650px) {
+	.authContainer {
+		width: 400px; 
+	}
+	.authContainer .friends {
+		width: 300px;
+	}
+}
+@media (max-width : 430px) {
+	.authContainer {
+		width: 300px; 
+	}
+	.authContainer .friends {
+		width: 200px;
+		height: 200px;
+	}
+	.authContainer .reservedForImg {
+		height: 200px;
+	}
+ }
+@media (max-width : 315px) {
+	.authContainer {
+		width: 250px; 
+	}
+	.authContainer .friends {
+		width: 100px; 
+		height: 100px;
+	}
+	.authContainer .reservedForImg {
+		height: 80px;
+	}
+} 
+@media (max-height : 915px) { 
+	.authContainer {
+		height: 400px;
+	}
+	.authContainer .friends {
+		z-index: 2; 
+		height: 150px;
+		width: 200px;
+	}
+	.authContainer .reservedForImg {
+		height: 130px;
+	}
+}
+@media (max-height : 760px) { 
+	.authContainer {
+		height: 400px;
+	} 
+}
+@media (max-height : 600px) { 
+	.authContainer {
+		height: 350px;
+	}
+	.authContainer button {
+		padding: 5px; 
+	}
+	.authContainer .friends {
+		height: 90px;
+		width: 100px;
+	}
+}
+@media (max-height : 560px) {  
+	.authContainer {
+		height: 300px;
+	}
+
+}
+ 
